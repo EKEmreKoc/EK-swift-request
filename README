@@ -1,5 +1,6 @@
 var getIstanbulData:EKNetwork=EKNetwork()
-        getIstanbulData.getDataFromUrl("http://api.openweathermap.org/data/2.5/weather?q=istanbul&mode=json", completion:{ (data:NSDictionary) -> Void in
+        
+    getIstanbulData.getDataFromUrl("http://api.openweathermap.org/data/2.5/weather?q=istanbul&mode=json", completion:{ (data:NSDictionary) -> Void in
             // println(data)
             println(data["name"])
             },failed:{ () -> Void in
